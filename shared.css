@@ -1,0 +1,99 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#logo {
+    color: #D3455A;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+
+/* header */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#restaurants-link,
+#shopping-cart {
+    display: none;
+    height: 50px;
+    border-bottom: 1px solid gray;
+}
+
+#menu-icon {
+    color: black;
+}
+
+#logo-red {
+    color: #D3455B;
+}
+
+
+/* header */
+
+hr {
+    border: 1px solid darkgrey;
+}
+
+@media(min-width: 768px) {
+    .restaurantDiv {
+        text-align: center;
+    }
+}
+
+@media(min-width: 992px) {
+    hr {
+        display: none;
+    }
+    #restaurants-link {
+        text-align: left;
+    }
+    #restaurants-link {
+        order: 1;
+        display: flex;
+        border-bottom: none;
+    }
+    #menu-icon {
+        display: none;
+    }
+    #logo {
+        order: 2;
+    }
+    #shopping-cart {
+        order: 3;
+        display: flex;
+        border-bottom: none;
+    }
+    .header {
+        flex-wrap: nowrap;
+    }
+    .header>div {
+        width: calc(100%/3);
+    }
+}
